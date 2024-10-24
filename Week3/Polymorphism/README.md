@@ -11,7 +11,7 @@
 ### Requirements 🏫
 ```
 1. A .java file
-2. Prints the exact qutient of 39 and 49
+2. Prints the exact quotient of 39 and 49
 3. Prints the rounded quotient of 37 and 49
 4. Prints the product of 37 and 49
 ```
