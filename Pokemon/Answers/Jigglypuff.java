@@ -1,4 +1,4 @@
-package JavaTraining2024.Pokemon.Answers;
+package Pokemon.Answers;
 
 public class Jigglypuff extends Pokemon {
 
