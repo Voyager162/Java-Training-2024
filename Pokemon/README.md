@@ -13,7 +13,7 @@
 
      b. Must have an instance variable for name
 
-     c. Must have a non-default constructor taking in parameters for initial health and name values and settingthe instance variables to those values
+     c. Must have a non-default constructor taking in parameters for initial health and name values and setting the instance variables to those values
 
      d. Must have a defined (regular) method “take damage” that intakes an integer parameter and subtracts that value from health
 
