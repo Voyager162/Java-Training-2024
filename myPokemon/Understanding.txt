@@ -1,0 +1,50 @@
+A. Explain why Pokemon should be an abstract class
+
+    Pokemon should be an abstract class because instances of that class should never be instantiated. Pokemon is a category, not a class.
+It provides certain characteristics but should is missing some key details that a pokemon needs such as the type of pokemon, what
+subclass it is, and characteristics that are selective to only that type. Another example of an abstract class would be food. You would
+never create an object that is simply food, it would fit into certain categories, then sub-categories and sometimes even further.
+
+    An abstract class also provides instructions to a future editor, user, or reader of your code. It tells them that this class is 
+simply a main categorie not a class of itself. This would provide furthur clarification and clarity of your code allowing you to become
+a better programmer.
+
+B. Explain why inheriting from Pokemon is useful
+
+    Inheriting from a pokemon is useful because it allows certain code to be saved from being rewritten. You could have simply took all 
+the methods and variables from the pokemon class and added them to each seperate pokemon class, but problems arise with that scenario.
+
+    One, if you wish to make a slight adjustment to one of those methods or variables it requires you to go into each of your classes to rewrite
+all those changes versus simply making the slight adjustment to the main class. Two, it also allows more clear reading of your code allowing
+the reader to not be overwhelmed by all the methodes and variables stuffed into each class instead of most of it being organized into the
+parent class. Third, one of the main rules of coding is to never repeat yourself, and if you do not make a parent-child class setup you are
+doomed to break this rule at some point.
+
+C. Explain an example of method polymorphism in your code
+
+    I used method polymorphism for each of the constructers for each of the classes. For each class I had two constructures, a 
+default one that set the standard variables to something pretty common for that pokemon, for the second I allowed for the coder to add in their
+own values to customize the pokemon instead of having to write the code to customize it later using the set functions.
+
+D. Explain an example of subtype polymorphism in your code
+
+    I used subtype polymorphism when I defined an abstract attack method in the parent Pokemon class, and had each child Pokémon class override 
+it with unique behavior. When I call attack on a Pokemon reference, Java dynamically selects the appropriate method implementation based on the 
+actual type of Pokémon. This allows each subclass of pokemon to define its specific attack functionality.
+
+E. Explain why you made one of your methods public
+
+    In all of my getters and setters in the main pokemon class I wanted to make those methods public because it would allow the user to access
+all of those variables. If those methods were not public then the user would not be able to access all of the private variables that I had defined
+in my pokemon class.
+
+    I also made another function in the main method that made two pokemon fight each other until one of them was dead. I named this method fight
+and I decided to make it public becuase in case I decided to expand my code to different functions and differnet scenarios it would be useful
+to call this function in those other classes because fighting is such a crucial element of the game.
+
+F. Explain why you made one of your instance variables private
+
+    All of my instance variables in the pokemon class are private because it provided future coders with instrunctions that these variables should
+not change often. For example, the name of a pokemon does not change very often because it is such a critical part of thier identity. I added in public
+getter and setters though in the case that the variables needed to be changed in the future. Like in the actual game of pokemon, I assume that you are
+allowed to change your pokemon's name, but it does not happen very often

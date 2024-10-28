@@ -2,7 +2,22 @@ package myPokemon;
 import java.util.Random;
 
 public class Pikachu extends Pokemon{
+    //basic constructer
+    Pikachu() {
 
+        super("Pikachu", 14);
+        this.setShield(12);
+        this.setStrength(10);
+
+    }
+    //custom constructer
+    Pikachu(String name, int health, int shield, int strength) {
+
+        super(name, health);
+        this.setShield(shield);
+        this.setStrength(strength);
+        
+    }
     Random rand = new Random();
 
     //code to attack, deals damage equal to a random integer between 0 and the attackers strength subtracted by the defenders shield
@@ -11,29 +26,13 @@ public class Pikachu extends Pokemon{
 
         double finalDamage;
 
-        if (this.strength > target.shield) {
+        if (this.getStrength() > target.getShield()) {
 
-            finalDamage = this.strength - target.shield;
+            finalDamage = this.getStrength() - target.getShield();
 
             finalDamage = Math.floor(Math.random() * (finalDamage - 1));
 
             target.takeDamage((int)finalDamage);
         }
-    }
-    //basic constructer
-    Pikachu() {
-
-        super("Pikachu", 14);
-        this.shield = 12;
-        this.strength = 10;
-
-    }
-    //custom constructer
-    Pikachu(String name, int health, int shield, int strength) {
-
-        super(name, health);
-        this.shield = shield;
-        this.strength = strength;
-        
     }
 }

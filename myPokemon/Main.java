@@ -25,7 +25,7 @@ public class Main {
             fighterOne.attack(fighterTwo);
             fighterTwo.attack(fighterOne);
 
-            System.out.println("fighter one health: " + fighterOne.health + " figher two health: " + fighterTwo.health);
+            System.out.println("fighter one health: " + fighterOne.getHealth() + " figher two health: " + fighterTwo.getHealth());
         }
 
         if (fighterOne.getIsFainted()) return fighterTwo.getName();
